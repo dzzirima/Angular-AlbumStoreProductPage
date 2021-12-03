@@ -9,7 +9,7 @@ export class ProductService {
 
   }
 
-  _albumUrl:string = "../assets/album.json"
+ private _albumUrl:string = "../assets/album.json"
 
   getAlbum(id:number){
      return this._http.get(this._albumUrl).map(response =>response.json())
